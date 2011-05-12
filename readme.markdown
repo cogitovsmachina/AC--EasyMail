@@ -20,8 +20,8 @@ Now you need to pass some more parameters like:
            mail.setBody("This is an email sent using my Mail JavaMail wrapper from an Android device.");`
                       
 Finally, you need to send the email, so we do the next:
-`
-try { 
+
+`try { 
               if(mail.send()) { 
 				//Say sent
               } else { 
@@ -30,13 +30,13 @@ try {
             } 
 			catch(Exception e) { 
 				//Log the problem
-            }
-`                
+            }`                
+
 And that's all!
 
 Dependencies
 ------------         
-You need to add three more libraries for JavaMail: `activation.jar`, `additional.jar` and `mail`.
+You need to add three more libraries for JavaMail: `activation.jar`, `additional.jar` and `mail.jar`.
 
 
 Version
