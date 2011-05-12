@@ -21,16 +21,15 @@ Now you need to pass some more parameters like:
                       
 Finally, you need to send the email, so we do the next:
 
-`try { 
-              if(mail.send()) { 
-				//Say sent
-              } else { 
-				//Say not sent 
-              } 
-            } 
-			catch(Exception e) { 
-				//Log the problem
-            }`                
+		`try { 
+		              if(mail.send()) { 
+			//Say sent
+		              } else {
+			//Say not sent 
+		              } 
+		            } catch(Exception e) { 
+			//Print StackTrace
+		            }`                
 
 And that's all!
 
