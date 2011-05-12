@@ -1,7 +1,7 @@
 AC EasyMail: Sending Emails without Intent
 =================================================================
 
-A friend asked me about how can you send a email without using Intents, so we searched and found out that [Jon Simon did a great job implementing a wrapper for JavaMail for Android][JonSimon], so i though we should build a Library to ease this work.  
+A friend asked me about how can you send a email without using Intents, focused in send an email without user intervention, so we searched and found out that [Jon Simon did a great job implementing a wrapper for JavaMail for Android][JonSimon], so i though we should build a Library to ease this work.  
 
 
 Usage
