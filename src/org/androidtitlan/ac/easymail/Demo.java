@@ -20,16 +20,15 @@ public class Demo extends Activity {
         private String user = "nrikediaz@gmail.com";
 
 		public void onClick(View view) {
-			ACEasyMail mail = new ACEasyMail(user, password);
+			EasyMail mail = new EasyMail(user, password);
        
-            String[] toArr = {"nrikediaz@androidtitlan.org", "nrikediaz@gmail.com"}; 
-            mail.setTo(toArr); 
+            String[] directionsToSend = {"nrikediaz@androidtitlan.org", "nrikediaz@gmail.com"}; 
+            mail.setTo(directionsToSend); 
             mail.setFrom("nrikediaz@gmail.com"); 
             mail.setSubject("This is an email sent using my Mail JavaMail wrapper from an Android device."); 
             mail.setBody("This is a test to send emails with JavaMail libraries for Android"); 
        
             try { 
-       
               if(mail.send()) { 
                 Toast.makeText(getApplicationContext(), "Email was sent successfully.", Toast.LENGTH_LONG).show(); 
               } else { 
