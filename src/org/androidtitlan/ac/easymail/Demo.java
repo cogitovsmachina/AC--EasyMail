@@ -29,8 +29,6 @@ public class Demo extends Activity {
             mail.setBody("This is a test to send emails with JavaMail libraries for Android"); 
        
             try { 
-            	//Adding Attachment to the email :).
-//              m.addAttachment("/sdcard/Zelda - Hey!Listen!.mp3"); 
        
               if(mail.send()) { 
                 Toast.makeText(getApplicationContext(), "Email was sent successfully.", Toast.LENGTH_LONG).show(); 
